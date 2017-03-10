@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ActivitiesAndFragmentsExample</string>
+    <string name="label_btn_start_activity_b">Start ActivityB</string>
+    <string name="label_btn_start_activity_c">Start ActivityC</string>
+    <string name="label_btn_start_activity_transparent">Start ActivityTransparent</string>
+    <string name="label_btn_finish">Finish</string>
+</resources>

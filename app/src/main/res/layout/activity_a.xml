@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="razvan.activitiesandfragmentsexample.ActivityA">
+
+    <TextView
+            android:id="@+id/tv_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            tools:text="1234"
+            android:layout_gravity="center"/>
+
+    <EditText
+            android:id="@+id/edt_test_orientation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Has id set"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/edt_test_orientation"
+            android:hint="Has no id set"/>
+
+    <Button
+            android:id="@+id/btn_start_activity_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_sum"
+            android:layout_centerHorizontal="true"
+            android:text="@string/label_btn_start_activity_b"/>
+
+    <Button
+            android:id="@+id/btn_start_activity_transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_start_activity_b"
+            android:layout_centerHorizontal="true"
+            android:text="@string/label_btn_start_activity_transparent"/>
+
+</RelativeLayout>
