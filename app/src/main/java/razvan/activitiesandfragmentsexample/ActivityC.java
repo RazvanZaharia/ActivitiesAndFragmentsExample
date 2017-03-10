@@ -12,10 +12,12 @@ public class ActivityC extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_c);
 
-        FragmentB fragmentB = FragmentB.newInstance();
-        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.add(R.id.layout_container, fragmentB, FRAGMENT_B_TAG);
-        fragmentTransaction.commitNow();
-        fragmentTransaction.addToBackStack(FRAGMENT_B_TAG);
+        if (savedInstanceState == null) {
+            FragmentB fragmentB = FragmentB.newInstance("Message from ActivityC");
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.add(R.id.layout_container, fragmentB, FRAGMENT_B_TAG);
+            fragmentTransaction.commitNow();
+//            fragmentTransaction.addToBackStack(FRAGMENT_B_TAG);
+        }
     }
 }

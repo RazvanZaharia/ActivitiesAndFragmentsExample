@@ -79,4 +79,5 @@ public class ActivityA extends BaseLogActivity {
         outState.putInt(SUM, sum);
         super.onSaveInstanceState(outState);
     }
+
 }

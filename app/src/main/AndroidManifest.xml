@@ -20,8 +20,7 @@
         <activity android:name=".ActivityB"
                   android:configChanges="orientation|screenSize"/>
 
-        <activity android:name=".ActivityC"
-                  android:screenOrientation="landscape"/>
+        <activity android:name=".ActivityC"/>
 
         <activity android:name=".ActivityTransparent" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
